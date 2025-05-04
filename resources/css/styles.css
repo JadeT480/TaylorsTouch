@@ -1,6 +1,7 @@
 /* Universal Styles */
 body {
   background-color: #ece6da;
+  color: #355155;
   font-family: "Fraunces", Georgia, serif;
   text-align: center;
 }
@@ -100,6 +101,19 @@ i {
   margin-top: 0;
 }
 
+/* Benefits section Styles */
+.benefit-item {
+  width: 100%;
+}
+
+.benefit-item img {
+  height: 120px;
+}
+
+.benefit-item p {
+  font-size: 1.2rem;
+}
+
 /* For Tablets, minimum of 600px */
 @media only screen and (min-width: 600px) {
   header {
@@ -126,6 +140,20 @@ i {
 
   nav.mobile {
     display: none;
+  }
+
+  #benefits {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  }
+
+  .benefit-item {
+    margin-top: 10px;
+  }
+
+  .benefit-item img {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -176,5 +204,22 @@ i {
 
   #mission p {
     font-size: 1.8rem;
+  }
+
+  #benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+
+  .benefit-item img {
+    width: 200px;
+    height: auto;
+  }
+
+  .benefit-item p {
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 }

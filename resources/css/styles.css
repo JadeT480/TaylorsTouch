@@ -64,6 +64,10 @@ nav a {
   font-size: 1.3rem;
 }
 
+nav a:hover {
+  color: #ca5c3e;
+}
+
 nav.desktop {
   display: none;
 }

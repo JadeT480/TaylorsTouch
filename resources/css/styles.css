@@ -114,6 +114,19 @@ i {
   font-size: 1.2rem;
 }
 
+/* About section Styles */
+#about {
+  border: 1px solid #355155;
+}
+
+#about img {
+  display: none;
+}
+
+#about p {
+  padding: 5px;
+}
+
 /* For Tablets, minimum of 600px */
 @media only screen and (min-width: 600px) {
   header {
@@ -221,5 +234,20 @@ i {
   .benefit-item p {
     font-size: 1.5rem;
     font-weight: bold;
+  }
+
+  #about {
+    display: flex;
+  }
+
+  #about img {
+    display: inline-block;
+    height: 300px;
+    width: auto;
+    padding: 5px;
+  }
+
+  #about p {
+    font-size: 1.5rem;
   }
 }
